@@ -30,6 +30,9 @@ public class ScriptA {
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("employee_infos")));
 
         WebElement avatar = driver.findElement(By.id("employee_infos"));
+        //avatar.click();
+
+       // Thread.sleep(100);
 
         WebDriverWait wait = new WebDriverWait(driver,60);
         avatar.click();
